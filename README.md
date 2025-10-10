@@ -32,5 +32,21 @@ PX4固件：最好安装1.14.4版本：https://github.com/PX4/PX4-Autopilot/tree
 1. 克隆项目仓库到工作空间下：
    ```
    mkdir -p ~/catkin_ws/src && cd ~/catkin_ws/src
-   git clone https://github.com/yourusername/yourproject.git
+   git clone https://github.com/lw-seu/quadrotor_mpc.git
    cd ~/catkin_ws
+2. 编译：
+   ```
+   catkin build quadrotor_mpc
+3. 启动PX4节点：
+   ```
+   roslaunch px4 mavros_posix_sitl.launch
+   ```
+   若成功启动，则能看到Gazebo打开且正确加载了无人机，终端显示Ready to takeoff
+   
+5. 打开另一个终端，启动控制算法节点：
+   ```
+   rosrun quadrotor_mpc tracking_mpc
+   ```
+   无人机沿双扭线飞行三圈，表示成功运行
+
+   
