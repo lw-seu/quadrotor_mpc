@@ -29,9 +29,8 @@ PX4固件：最好安装1.14.4版本：https://github.com/PX4/PX4-Autopilot/tree
 `tracking_node`: main函数入口
 ## 运行步骤
 
-### 安装步骤
-
-1. 克隆项目仓库：
-   ```bash
+1. 克隆项目仓库到工作空间下：
+   ```
+   mkdir -p ~/catkin_ws/src && cd ~/catkin_ws/src
    git clone https://github.com/yourusername/yourproject.git
-   cd yourproject
+   cd ~/catkin_ws
