@@ -1,0 +1,3 @@
+/home/lw/catkin_ws/src/quadrotor_rsmpc/mpc_controller/CMakeFiles/quadrotor_acado_export.dir
+/home/lw/catkin_ws/src/quadrotor_rsmpc/mpc_controller/CMakeFiles/edit_cache.dir
+/home/lw/catkin_ws/src/quadrotor_rsmpc/mpc_controller/CMakeFiles/rebuild_cache.dir
