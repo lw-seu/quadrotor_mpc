@@ -20,7 +20,7 @@ PX4固件：最好安装1.14.4版本：https://github.com/PX4/PX4-Autopilot/tree
 
 `mpc_wrapper`：调用ACADO的函数，封装成底层wrapper，应该不用动（应该没错误吧），相关类为MpcWrapper
 
-`mpc_ros_application`：针对基于ROS的实现创建的中间层，相关类MpcRosApplication为父类，不能创建实例，该中创建了MpcWrapper的实例
+`mpc_ros_application`：针对基于ROS的实现创建的中间层，相关类MpcRosApplication为父类，不能创建实例，该类中创建了MpcWrapper的实例
 
 `mpc_tracking`：实际应用层，大部分修改在这里进行，相关类TrackingMpc继承自MpcRosApplication。要想创建新的基于ROS的代码直接添加新的.cpp文件，创建子类继承MpcRosApplication就行，其他的不用动
 
