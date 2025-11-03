@@ -43,6 +43,10 @@ PX4固件：最好安装1.14.4版本：https://github.com/PX4/PX4-Autopilot/tree
    ```
    若成功启动，则能看到Gazebo打开且正确加载了无人机，终端显示Ready to takeoff
    
+   PS:首次启动PX4节点，要打开地面站`QGroundControl`修改参数`THR_MDL_FAC`的值（0.8-1.0应该都可以）来使得推力映射更接近真实（参考官方文档 https://docs.px4.io/v1.14/en/config_mc/pid_tuning_guide_multicopter.html 中Thrust Curve部分），后面若修改了最大推力约束最好再调一下这个参数
+ 
+   <img width="583" height="107" alt="5215d4c4bb79865c448269a138b15031" src="https://github.com/user-attachments/assets/5ef3dc1a-75d9-41d6-b94c-fb1b0f847bce" />
+
 5. 打开另一个终端，启动控制算法节点：
    ```
    rosrun quadrotor_mpc tracking_mpc
